@@ -1,5 +1,3 @@
-# ui.R
-
 shinyUI(fluidPage(
   titlePanel("censusVis"),
   
@@ -19,6 +17,10 @@ shinyUI(fluidPage(
                   min = 0, max = 100, value = c(0, 100))
     ),
     
-    mainPanel(plotOutput("map"))
+    mainPanel(
+      textOutput("text1"),
+      textOutput("text2"),
+      textOutput("text3")
+    )
   )
 ))
